@@ -1,0 +1,2 @@
+# GomokuSan
+Gomoku Player
