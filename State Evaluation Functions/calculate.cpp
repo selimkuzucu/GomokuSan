@@ -1,4 +1,4 @@
-long int calculate(int con, int blocks, bool isCurr, bool emptyFound = false){
+int calculate(int con, int blocks, bool isCurr, bool emptyFound = false){
     if(blocks == 2 && con < 5){
         return 0;
     }
