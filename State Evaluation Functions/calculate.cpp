@@ -1,5 +1,5 @@
-int calculate(int con, int blocks, bool isCurr, bool emptyFound = false){
-    if(blocks == 2 && con < 5){
+int calculate(int con, int aligned, bool isCurr, bool emptyFound = false){
+    if(aligned == 2 && con < 5){
         return 0;
     }
     
@@ -17,7 +17,7 @@ int calculate(int con, int blocks, bool isCurr, bool emptyFound = false){
         
         int conID = con-1;
         double value = conScore[conID];
-        if(blocks == 1){
+        if(aligned == 1){
             value *= blockCountScore[conID];
         }
         if (!isCurr){
